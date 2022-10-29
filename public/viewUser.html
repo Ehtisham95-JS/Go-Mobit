@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav-bar">
+            <h2><a href="/">Admin Pannel</a></h2>
+            <h4><a href="/addUser.html">Add User</a></h2>
+                <h4><a href="/viewUser.html">View User</a></h2>
+        </div>
+
+
+        <div class="table-container">
+            <div class="drop-down">
+                <form action="" id="search-form">
+                    <label for="users" style="color:white;">Search User</label>
+                    <select name="_id" id="users" value="all">
+                        <option value="all">All(default)</option>
+
+                    </select>
+                    <button type="submit" id="search-btn">Search</button>
+                </form>
+
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Cell #</th>
+                        <th>Created At</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+
+                <tbody id="row">
+
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <button><a href="">Delete</a></button>
+                        </td>
+
+                    </tr>
+                </tbody>
+
+
+            </table>
+        </div>
+    </div>
+
+    <script src="/viewUser.js">
+    </script>
+
+</body>
+
+</html>

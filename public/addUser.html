@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav-bar">
+            <h2><a href="/">Admin Pannel</a></h2>
+            <h4><a href="/addUser.html">Add User</a></h2>
+                <h4><a href="/viewUser.html">View User</a></h2>
+        </div>
+
+
+        <div class="form-container">
+            <form action="" id="add-user-form">
+                <p id="success-msg" style="text-align:center; background-color: rgb(43, 178, 43); color:white; padding:10px 0px; display: none;">Successfully Registered</p>
+                <h2>Add User</h2>
+                <label for="name">Name</label>
+                <input type="text" name="name" placeholder="Enter Name" required id="name-input">
+
+                <label for="email">Email</label>
+                <input type="text" name="email" placeholder="Enter Email" required id="email-input">
+                <div class="error" style="color:red">
+                    <p id="email-validation-error"></p>
+                </div>
+
+                <label for="name">Phone#</label>
+                <input type="text" name="phone" placeholder="Enter phone" required id="phone-input">
+
+                <label for="name">Age</label>
+                <input type="text" name="age" placeholder="Enter Age" required id="age-input">
+                <div class="error" style="color:red">
+                    <p id="age-error"></p>
+                </div>
+
+                <button id="form-submit-btn" type="submit">
+                    Submit
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script src="/addUser.js"></script>
+
+
+</body>
+
+</html>
